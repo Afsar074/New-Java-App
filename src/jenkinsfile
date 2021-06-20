@@ -1,0 +1,21 @@
+pipeline{
+  agent any {
+      stages {
+           stage('compile code'){
+                  steps{
+                  echo 'compile code'
+                  }
+                      }
+           stage('create build'){
+                  steps{
+                  echo 'create build'
+                  }
+           }
+           stage('install package'){
+                  steps{
+                  echo 'install package'}
+           }
+
+
+}
+ }
